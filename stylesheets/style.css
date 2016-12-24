@@ -1,0 +1,98 @@
+body{
+	font-family: 'Century Gothic','Verdana';
+}
+.blue{
+	color:#1896A4;
+}
+.nav-bar{
+	position: fixed;
+	padding:0.3em;
+	background:#ccc;
+	color:white;
+	font-family:'Century Gothic','Helvetica Nue','Helvetica','Verdana';
+	font-size:1rem;
+	text-align:right;
+}
+
+.site-logo{
+	margin-top:0.5rem;
+	display: inline-flex;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: left;
+	color:#222;
+}
+.nav-menu-container{
+	display: inline;
+	text-align: right;
+}
+.nav-menu-container>input{
+	float:right;
+}
+.nav-menu{
+	list-style-type: none;
+}
+.nav-menu-item{
+	display:inline;
+}
+.lg-email,.lg-pass{
+	margin-left: 1rem;
+	width:5rem;
+	height:20px;
+}
+.nav-login{
+	float: right;
+}
+.txt-input{
+  	padding-top:0.2rem;
+  	padding-bottom:0.2rem;
+  	padding-left:0.5rem;
+  	margin-left:0.5rem;
+  	margin-top:0.5rem;
+ 	display: inline-block;
+  	vertical-align: middle;
+  	height:1.5rem;
+  	width:10rem;
+  	background-color:#fff;
+  	color:#222;
+  	border:1px solid #fff;
+  	border-radius:2rem;    
+  	transition:0.2s ease-out;
+}
+.txt-input:focus,.txt-input:hover{
+  box-shadow:0 0 10px #fff;
+}
+
+.site-logo{
+	float:left;
+	font-weight:bold;
+	letter-spacing: 5px;
+}
+.nav-button{
+	margin:1rem;
+	font-weight: bold;
+	color:#000;
+}
+
+.header{
+	padding-top: 5rem;
+	background: url('http://cdn.pcwallart.com/images/city-road-at-night-wallpaper-4.jpg');
+	color:#fff;
+}
+.small{
+	font-size:1.5rem;
+	color:#fff;
+}
+h5{
+	font-size:1rem;
+}
+.github-link{
+	margin-top:4rem;
+	padding:0.9rem;
+	background-color: #1896A4;
+	color:#fff;
+}
+.github-link:hover{
+	background-color: #fff;
+	color:#1896A4;
+}
