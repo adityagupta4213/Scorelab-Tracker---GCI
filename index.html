@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Scorelab</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/foundation.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	</head>
+	<body>
+		<div class="navigator">
+			<h4 class="site-logo">TRACKER</h4>
+			<div class="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="nav-menu-item"><a href="javascript:void(0)">HOME</a></li>
+					<li class="nav-menu-item"><a href="javascript:void(0)">GITHUB</a></li>
+					<li class="nav-menu-item"><a href="javascript:void(0)">SCORELAB</a></li>
+					<li class="lg-email">
+						<input type="email" name="email"/>
+					</li>
+					<li class="lg-pass">
+						<input type="password" name="password"/>
+					</li>
+					<li class="lg-btn">
+						<input type="submit" name="login" value="Login"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="row">
+				<div class="large-8 columns">
+					<div class="descriptive-text">
+						<h3>
+							<strong>Tracker</strong>, the extensible vehicle tracking system
+						</h3>
+						<h5>
+							Tracker ( or the Mobility Tracker ) is a project to build a core of a real-time vehicle tracking system which can be extended by other vehicle tracking systems. This system could be extended to track trains, trucks, taxis, etc. 
+						</h5>
+						<a class="github-link" href="https://github.com/scorelab/tracker/">
+							Take me to GitHub
+						</a>
+					</div>
+				</div>
+				<div class="large-4 columns">
+					<div class="signup-form-container">
+						<form class="signup-form">
+							<h3 class="su-header">
+								SIGNUP NOW!
+							</h3>
+							<input type="name" name="username"/>
+							<input type="email" name="email"/>
+							<input type="password" name="password"/>
+							<input type="password" name="rp-password"/>
+							<input type="submit" name="signup" value="Sign Up"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="row">
+				<h4 class="body-header">
+					Info
+				</h4>
+				<strong>GPS Unit</strong>
+				Sends GPS positions and other data to the Node.js application. This could be an Android application or any other form of GPS device. 
+				<strong>Admin Interface</strong> 
+				Interface for the system administrators for assigning tracker IDs to the vehicles. All the other administrative actions are done with this interface.
+				<strong>Public Interface</strong>
+				Interface for the general public. Consumes the RESTful service and maps data onto a map. Fetch data from RESTful service every 10 seconds.
+				<strong>Node.js Application (RESTful Service) + MongoDB Stack</strong>
+				Node.js Application processes the raw GPS data and stores in a MongoDB database. Thousands of reads and writes of non relational data could happen in real-time. In a possible scenario, hundreds of GPS units could send raw GPS data to the server every 10 seconds.
+				Part of the Node.js application works as the RESTful service. In a possible scenario, hundreds of clients may be consuming the RESTful service in real-time, sending hundreds of requests per second. Therefore Node.js is used for this data-intensive real-time application.
+				<strong>JavaEE Application + MySQL Stack</strong>
+				This handles the administrative works. Scalability is the main idea; system should be able to adopt new requirements as demanded.
+
+			</div>
+		</div>
+	</body>
+</html>
