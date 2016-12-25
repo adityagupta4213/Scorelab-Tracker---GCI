@@ -8,12 +8,13 @@
 	</head>
 	<body>
 		<div class="nav-bar twelve columns">
-			<h4 class="site-logo"><span class="blue">T</span>RACKER</h4>
-			<div class="row">
+			
+			<div class="row nav-menu">
+				<h4 class="site-logo"><span class="blue">T</span>RACKER</h4>
 					<nav>
 						<input type="text" name="username" class="txt-input" id="username"></input>
 						<input type="password" name="password" class="txt-input" id="password"></input>
-						<a href="javascript:void(0)" class="nav-button">Login</a>
+						<a href="javascript:void(0)" class="nav-button nav-login">Login</a>
 						<a href="javascript:void(0)" class="nav-button">Home</a>
 						<a href="javascript:void(0)" class="nav-button">GitHub</a>
 						<a href="javascript:void(0)" class="nav-button">Scorelab</a>
@@ -24,11 +25,12 @@
 			<div class="row">
 				<div class="large-8 columns">
 					<div class="descriptive-text">
-						<h3>
+						<h1>
 							<strong>Tracker</strong>, <span class="small">the extensible vehicle tracking system</span>
-						<h5>
+						</h1>
+						<h4>
 							Tracker ( or the Mobility Tracker ) is a project to build a core of a real-time vehicle tracking system which can be extended by other vehicle tracking systems. This system could be extended to track trains, trucks, taxis, etc. 
-						</h5>
+						</h4>
 						<br>
 						<a class="github-link" href="https://github.com/scorelab/tracker/">
 							Take me to GitHub
@@ -41,33 +43,81 @@
 							<h3 class="su-header">
 								SIGNUP NOW!
 							</h3>
-							<input type="text" name="username"/>
-							<input type="email" name="email"/>
-							<input type="password" name="password"/>
-							<input type="password" name="rp-password"/>
-							<input type="submit" name="signup" value="Sign Up"/>
+							<input type="text" name="username" placeholder="Username" />
+							<input type="email" name="email" placeholder="Email" />
+							<input type="password" name="password" placeholder="Password" />
+							<input type="password" name="rp-password" placeholder="Repeat Password" />
+							<a class="signup-btn" href="javascript:void(0)">Signup</a>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="body">
-			<div class="row">
-				<h4 class="body-header">
+		<div class="body-container">
+			<div class="row body">
+				<h2 class="body-header">
 					Info
-				</h4>
-				<strong>GPS Unit</strong><br>
-				Sends GPS positions and other data to the Node.js application. This could be an Android application or any other form of GPS device.<br> 
-				<strong>Admin Interface</strong> <br>
-				Interface for the system administrators for assigning tracker IDs to the vehicles. All the other administrative actions are done with this interface.<br>
-				<strong>Public Interface</strong><br>
-				Interface for the general public. Consumes the RESTful service and maps data onto a map. Fetch data from RESTful service every 10 seconds.<br>
-				<strong>Node.js Application (RESTful Service) + MongoDB Stack</strong><br>
-				Node.js Application processes the raw GPS data and stores in a MongoDB database. Thousands of reads and writes of non relational data could happen in real-time. In a possible scenario, hundreds of GPS units could send raw GPS data to the server every 10 seconds.
-				Part of the Node.js application works as the RESTful service. In a possible scenario, hundreds of clients may be consuming the RESTful service in real-time, sending hundreds of requests per second. Therefore Node.js is used for this data-intensive real-time application.<br>
-				<strong>JavaEE Application + MySQL Stack</strong><br>
-				This handles the administrative works. Scalability is the main idea; system should be able to adopt new requirements as demanded.<br>
-
+				</h2>
+				<div class="row">
+					<div class="large-9 columns">
+						<h4>GPS Unit</h4>
+						<h5>
+							Sends GPS positions and other data to the Node.js application. This could be an Android application or any other form of GPS device. 
+						</h5>
+					</div>
+					<div class="large-3 columns">
+						<img class="illustration" src="res/gps.png"/>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="large-3 columns">
+						<img class="illustration" src="res/cpanel.png"/>
+					</div>
+					<div class="large-9 columns admin">
+						<h4>Admin Interface</h4>
+						<h5>
+							Interface for the system administrators for assigning tracker IDs to the vehicles. All the other administrative actions are done with this interface.
+						</h5>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="large-9 columns">
+						<h4>Public Interface</h4>
+						<h5>
+							Interface for the general public. Consumes the RESTful service and maps data onto a map. Fetch data from RESTful service every 10 seconds.
+						</h5>
+					</div>
+					<div class="large-3 columns">
+						<img class="illustration" src="res/public.png"/>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="large-3 columns">
+						<img class="illustration" src="res/node.png"/>
+					</div>
+					<div class="large-9 columns">
+						<h4>Node.js Application (RESTful Service) + MongoDB Stack</h4>
+						<h5>
+							Node.js Application processes the raw GPS data and stores in a MongoDB database. Thousands of reads and writes of non relational data could happen in real-time. In a possible scenario, hundreds of GPS units could send raw GPS data to the server every 10 seconds.
+							Part of the Node.js application works as the RESTful service. In a possible scenario, hundreds of clients may be consuming the RESTful service in real-time, sending hundreds of requests per second. Therefore Node.js is used for this data-intensive real-time application.
+						</h5>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="large-9 columns">
+						<h4>JavaEE Application + MySQL Stack</h4>
+						<h5>
+							This handles the administrative works. Scalability is the main idea; system should be able to adopt new requirements as demanded.
+						</h5>
+					</div>
+					<div class="large-3 columns">
+						<img class="illustration" src="res/mysql.jpg"/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

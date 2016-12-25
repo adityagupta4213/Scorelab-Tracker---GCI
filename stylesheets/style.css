@@ -1,98 +1,213 @@
 body{
 	font-family: 'Century Gothic','Verdana';
 }
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Century Gothic','Verdana';
+}
+/*NAVIGATION MENU*/
 .blue{
-	color:#1896A4;
+	color: #fff;
 }
 .nav-bar{
 	position: fixed;
-	padding:0.3em;
-	background:#ccc;
-	color:white;
-	font-family:'Century Gothic','Helvetica Nue','Helvetica','Verdana';
-	font-size:1rem;
-	text-align:right;
+	padding: 0.3em;
+	background: rgba(200,200,200,0.7);
+	color: white;
+	font-family: 'Century Gothic','Helvetica Nue','Helvetica','Verdana';
+	font-size: 1rem;
+	text-align: right;
 }
 
 .site-logo{
-	margin-top:0.5rem;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+	float: left;
 	display: inline-flex;
 	font-weight: bold;
 	font-size: 1.2rem;
 	text-align: left;
-	color:#222;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
 }
 .nav-menu-container{
 	display: inline;
 	text-align: right;
 }
 .nav-menu-container>input{
-	float:right;
+	float: right;
 }
 .nav-menu{
 	list-style-type: none;
 }
 .nav-menu-item{
-	display:inline;
+	display: inline;
 }
 .lg-email,.lg-pass{
 	margin-left: 1rem;
-	width:5rem;
-	height:20px;
-}
-.nav-login{
-	float: right;
+	width: 5rem;
+	height: 20px;
 }
 .txt-input{
-  	padding-top:0.2rem;
-  	padding-bottom:0.2rem;
-  	padding-left:0.5rem;
-  	margin-left:0.5rem;
-  	margin-top:0.5rem;
+  	padding-top: 0.2rem;
+  	padding-bottom: 0.2rem;
+  	padding-left: 0.5rem;
+  	margin-left: 0.5rem;
+  	margin-top: 0.5rem;
  	display: inline-block;
   	vertical-align: middle;
-  	height:1.5rem;
-  	width:10rem;
-  	background-color:#fff;
-  	color:#222;
-  	border:1px solid #fff;
-  	border-radius:2rem;    
-  	transition:0.2s ease-out;
+  	height: 1.5rem;
+  	width: 10rem;
+  	background-color: #fff;
+  	color: #222;
+  	border: 1px solid #fff;
+  	border-radius: 2rem;    
+  	transition: 0.2s ease-out;
+
 }
-.txt-input:focus,.txt-input:hover{
-  box-shadow:0 0 10px #fff;
+.txt-input: focus,.txt-input:hover{
+  box-shadow: 0 0 10px #fff;
 }
 
-.site-logo{
-	float:left;
-	font-weight:bold;
-	letter-spacing: 5px;
-}
 .nav-button{
-	margin:1rem;
+	margin: 1rem;
 	font-weight: bold;
-	color:#000;
+	color: #222;
 }
 
+.nav-login{
+	margin-top: 4rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	font-weight: lighter;
+	background-color: #1896A4;
+	color: #fff;
+	border-radius: 0.5rem;
+	transition: 0.3s ease;
+}
+.nav-login:hover{
+	background-color: #fff;
+	color: #1896A4;
+}
+
+/*HEADER*/
 .header{
+	line-height: 4rem;
+	padding: 5rem;
 	padding-top: 5rem;
-	background: url('http://cdn.pcwallart.com/images/city-road-at-night-wallpaper-4.jpg');
-	color:#fff;
+	background: url('../res/bg-n.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: #fff;
 }
 .small{
-	font-size:1.5rem;
-	color:#fff;
+	font-size: 1.5rem;
+	color: #fff;
+}
+.descriptive-text>h1{
+	text-shadow: 0 0 2px #222;
+}
+.descriptive-text>h4{
+	text-shadow: 0 0 2px #222;
+}
+h4{
+	font-size: 1.2rem;
 }
 h5{
-	font-size:1rem;
+	font-size: 1rem;
 }
 .github-link{
-	margin-top:4rem;
-	padding:0.9rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 0.9rem;
 	background-color: #1896A4;
-	color:#fff;
+	color: #fff;
+	transition: 0.3s ease;
 }
 .github-link:hover{
 	background-color: #fff;
-	color:#1896A4;
+	color: #1896A4;
+}
+
+.signup-form-container{
+	padding: 2rem;
+	border-radius: 5px;
+	background-color: rgba(250,250,250,0.7);
+	color: #222;
+}
+input::-webkit-input-placeholder{
+	color: #555;
+}
+input::-moz-placeholder{
+	color: #555;
+}
+input::-ms-input-placeholder{
+	color: #555;
+}
+input::-moz-placeholder{
+	color: #555;
+}
+
+.signup-btn{
+	padding: 1rem;
+	padding-top: 0.6rem;
+	padding: bottom: 0.2rem;
+	font-size: 1.3rem;
+	background-color: #1896A4;
+	color: #fff;
+	transition: 0.2s ease;
+}
+.signup-btn:hover{
+	background-color: #fff;
+	color: #1896A4;
+}
+
+@media screen and (max-width: 639px){
+	.header{
+		line-height: 4rem;
+	}
+	.signup-form>input{
+		height: 2rem;
+	}
+	.signup-btn{
+		padding: 0.7rem;
+		padding-top: 0.3rem;
+		padding: bottom: 0.1rem;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 480px){
+	.nav-menu{
+		display: none;
+	}
+}
+
+/*BODY*/
+.body-container{
+	margin-left: 2rem;
+	margin-top:0.5rem;
+	padding: 1rem;
+}
+
+.body-header{
+	font-weight: bold;
+}
+.body>h4{
+	font-size:1.5rem;
+}
+.illustration{
+	width:50%;
+	text-align: center;
+}
+.body>.large-3{
+	text-align: center;
+}
+.admin{
+	padding-top:1rem;
 }
